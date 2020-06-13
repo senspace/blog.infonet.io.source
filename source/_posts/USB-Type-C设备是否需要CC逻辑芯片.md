@@ -21,6 +21,8 @@ tags:
    
    双角色端口，DRP既可以做DFP(Host)，也可以做UFP(Device)，也可以在DFP与UFP间动态切换。典型的DRP设备是电脑(电脑可以作为USB的主机，也可以作为被充电的设备（苹果新推出的MAC Book Air）)，具OTG功能的手机(手机可以作为被充电和被读数据的设备，也可以作为主机为其他设备提供电源或者读取U盘数据)，移动电源(放电和充电可通过一个USB Type-C，即此口可以放电也可以充电)。
  
+<!---more--->
+
 4. CC（Configuration Channel）
    
    配置通道，这是USB Type-C里新增的关键通道，它的作用有检测USB连接，检测正反插，USB设备间数据与VBUS的连接建立与管理等。
@@ -32,8 +34,6 @@ tags:
 6. Electronically Marked Cable
    
    封装有E-Marker芯片的USB Type-C有源电缆，DFP和UFP利用PD协议可以读取该电缆的属性：电源传输能力，数据传输能力，ID等信息。所有全功能的Type-C电缆都应该封装有E-Marker，但USB2.0 Type-C电缆可以不封装E-Marker。
-
-<!---more--->
 
 # 2. USB Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程：
  
